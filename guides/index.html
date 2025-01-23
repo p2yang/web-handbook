@@ -1,0 +1,226 @@
+<!DOCTYPE html><html lang="en" dir="ltr" data-theme="dark" data-has-toc data-has-sidebar class="astro-bguv2lll"> <head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Web 指南 | My Docs</title><link rel="canonical"/><link rel="shortcut icon" href="/web-handbook/favicon.svg" type="image/svg+xml"/><meta name="generator" content="Astro v5.1.8"/><meta name="generator" content="Starlight v0.31.1"/><meta property="og:title" content="Web 指南"/><meta property="og:type" content="article"/><meta property="og:url"/><meta property="og:locale" content="en"/><meta property="og:description"/><meta property="og:site_name" content="My Docs"/><meta name="twitter:card" content="summary_large_image"/><script>
+	window.StarlightThemeProvider = (() => {
+		const storedTheme =
+			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+		const theme =
+			storedTheme ||
+			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+		return {
+			updatePickers(theme = storedTheme || 'auto') {
+				document.querySelectorAll('starlight-theme-select').forEach((picker) => {
+					const select = picker.querySelector('select');
+					if (select) select.value = theme;
+					/** @type {HTMLTemplateElement | null} */
+					const tmpl = document.querySelector(`#theme-icons`);
+					const newIcon = tmpl && tmpl.content.querySelector('.' + theme);
+					if (newIcon) {
+						const oldIcon = picker.querySelector('svg.label-icon');
+						if (oldIcon) {
+							oldIcon.replaceChildren(...newIcon.cloneNode(true).childNodes);
+						}
+					}
+				});
+			},
+		};
+	})();
+</script><template id="theme-icons"><svg aria-hidden="true" class="light astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg> <svg aria-hidden="true" class="dark astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg> <svg aria-hidden="true" class="auto astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg> </template><link rel="stylesheet" href="/web-handbook/_astro/print.BJ0teN4y.css" media="print"><link rel="stylesheet" href="/web-handbook/_astro/index.DGPHd1dk.css"><script type="module" src="/web-handbook/_astro/page.7qqag-5g.js"></script></head> <body class="astro-bguv2lll"> <a href="#_top" class="astro-7q3lir66">Skip to content</a>  <div class="page sl-flex astro-vrdttmbt"> <header class="header astro-vrdttmbt"><div class="header sl-flex astro-kmkmnagf"> <div class="title-wrapper sl-flex astro-kmkmnagf"> <a href="/web-handbook/" class="site-title sl-flex astro-m46x6ez3">  <img class="astro-m46x6ez3" alt src="/web-handbook/_astro/logo.DRczoMXD.png" width="128" height="128">  <span class="astro-m46x6ez3" translate="no"> My Docs </span> </a>  </div> <div class="sl-flex print:hidden astro-kmkmnagf"> <site-search class="astro-kmkmnagf astro-v37mnknz" data-translations="{&#34;placeholder&#34;:&#34;Search&#34;}"> <button data-open-modal disabled aria-label="Search" aria-keyshortcuts="Control+K" class="astro-v37mnknz"> <svg aria-hidden="true" class="astro-v37mnknz astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></svg>  <span class="sl-hidden md:sl-block astro-v37mnknz" aria-hidden="true">Search</span> <kbd class="sl-hidden md:sl-flex astro-v37mnknz" style="display: none;"> <kbd class="astro-v37mnknz">Ctrl</kbd><kbd class="astro-v37mnknz">K</kbd> </kbd> </button> <dialog style="padding:0" aria-label="Search" class="astro-v37mnknz"> <div class="dialog-frame sl-flex astro-v37mnknz">  <button data-close-modal class="sl-flex md:sl-hidden astro-v37mnknz"> Cancel </button> <div class="search-container astro-v37mnknz"> <div id="starlight__search" class="astro-v37mnknz"></div> </div> </div> </dialog> </site-search>  <script>
+	(() => {
+		const openBtn = document.querySelector('button[data-open-modal]');
+		const shortcut = openBtn?.querySelector('kbd');
+		if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+		const platformKey = shortcut.querySelector('kbd');
+		if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+			platformKey.textContent = '⌘';
+			openBtn.setAttribute('aria-keyshortcuts', 'Meta+K');
+		}
+		shortcut.style.display = '';
+	})();
+</script> <script type="module" src="/web-handbook/_astro/Search.astro_astro_type_script_index_0_lang.DW95m5a_.js"></script>   </div> <div class="sl-hidden md:sl-flex print:hidden right-group astro-kmkmnagf"> <div class="sl-flex social-icons astro-kmkmnagf"> <a href="https://github.com/p2yang/web-handbook" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">GitHub</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.08 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3Z"/></svg> </a> </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg>  <select value="auto" autocomplete="off" class="astro-4yphtoen"> <option value="dark" class="astro-4yphtoen">Dark</option><option value="light" class="astro-4yphtoen">Light</option><option value="auto" selected class="astro-4yphtoen">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </label>  </starlight-theme-select>  <script>
+	StarlightThemeProvider.updatePickers();
+</script> <script type="module">const r="starlight-theme",o=e=>e==="auto"||e==="dark"||e==="light"?e:"auto",c=()=>o(typeof localStorage<"u"&&localStorage.getItem(r));function n(e){typeof localStorage<"u"&&localStorage.setItem(r,e==="light"||e==="dark"?e:"")}const l=()=>matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";function t(e){StarlightThemeProvider.updatePickers(e),document.documentElement.dataset.theme=e==="auto"?l():e,n(e)}matchMedia("(prefers-color-scheme: light)").addEventListener("change",()=>{c()==="auto"&&t("auto")});class s extends HTMLElement{constructor(){super(),t(c()),this.querySelector("select")?.addEventListener("change",a=>{a.currentTarget instanceof HTMLSelectElement&&t(o(a.currentTarget.value))})}}customElements.define("starlight-theme-select",s);</script> <script type="module">class s extends HTMLElement{constructor(){super();const e=this.querySelector("select");e&&(e.addEventListener("change",t=>{t.currentTarget instanceof HTMLSelectElement&&(window.location.pathname=t.currentTarget.value)}),window.addEventListener("pageshow",t=>{if(!t.persisted)return;const n=e.querySelector("option[selected]")?.index;n!==e.selectedIndex&&(e.selectedIndex=n??0)}))}}customElements.define("starlight-lang-select",s);</script> </div> </div> </header> <nav class="sidebar print:hidden astro-vrdttmbt" aria-label="Main"> <starlight-menu-button class="print:hidden astro-jif73yzw"> <button aria-expanded="false" aria-label="Menu" aria-controls="starlight__sidebar" class="sl-flex md:sl-hidden astro-jif73yzw"> <svg aria-hidden="true" class="astro-jif73yzw astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M3 8h18a1 1 0 1 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/></svg>  </button> </starlight-menu-button> <script type="module">class s extends HTMLElement{constructor(){super(),this.btn=this.querySelector("button"),this.btn.addEventListener("click",()=>this.toggleExpanded());const t=this.closest("nav");t&&t.addEventListener("keyup",e=>this.closeOnEscape(e))}setExpanded(t){this.setAttribute("aria-expanded",String(t)),document.body.toggleAttribute("data-mobile-menu-expanded",t)}toggleExpanded(){this.setExpanded(this.getAttribute("aria-expanded")!=="true")}closeOnEscape(t){t.code==="Escape"&&(this.setExpanded(!1),this.btn.focus())}}customElements.define("starlight-menu-button",s);</script>   <div id="starlight__sidebar" class="sidebar-pane astro-vrdttmbt"> <div class="sidebar-content sl-flex astro-vrdttmbt"> <sl-sidebar-state-persist data-hash="11tpvcf" class="astro-kku4brbg"> <script aria-hidden="true">
+		(() => {
+			try {
+				if (!matchMedia('(min-width: 50em)').matches) return;
+				/** @type {HTMLElement | null} */
+				const target = document.querySelector('sl-sidebar-state-persist');
+				const state = JSON.parse(sessionStorage.getItem('sl-sidebar-state') || '0');
+				if (!target || !state || target.dataset.hash !== state.hash) return;
+				window._starlightScrollRestore = state.scroll;
+				customElements.define(
+					'sl-sidebar-restore',
+					class SidebarRestore extends HTMLElement {
+						connectedCallback() {
+							try {
+								const idx = parseInt(this.dataset.index || '');
+								const details = this.closest('details');
+								if (details && typeof state.open[idx] === 'boolean') details.open = state.open[idx];
+							} catch {}
+						}
+					}
+				);
+			} catch {}
+		})();
+	</script>  <ul class="top-level astro-3ii7xxms"> <li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <sl-sidebar-restore data-index="0"></sl-sidebar-restore> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Guides</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/web-handbook/guides/" aria-current="page" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Web 指南</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/web-handbook/guides/app/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">App</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/web-handbook/guides/others/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Web 成长体系</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/web-handbook/guides/seo/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">SEO</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/web-handbook/guides/ui/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">UI Tools</span>  </a> </li> </ul>  </details> </li><li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <sl-sidebar-restore data-index="1"></sl-sidebar-restore> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Reference</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/web-handbook/reference/awesome/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Awesome</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/web-handbook/reference/imooc/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">一些慕课网免费学习计划链接</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/web-handbook/reference/tool/" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Tools</span>  </a> </li> </ul>  </details> </li> </ul>   <script aria-hidden="true">
+		(() => {
+			const scroller = document.getElementById('starlight__sidebar');
+			if (!window._starlightScrollRestore || !scroller) return;
+			scroller.scrollTop = window._starlightScrollRestore;
+			delete window._starlightScrollRestore;
+		})();
+	</script> </sl-sidebar-state-persist>  <div class="md:sl-hidden"> <div class="mobile-preferences sl-flex astro-wu23bvmt"> <div class="sl-flex social-icons astro-wu23bvmt"> <a href="https://github.com/p2yang/web-handbook" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">GitHub</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.08 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3Z"/></svg> </a> </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg>  <select value="auto" autocomplete="off" class="astro-4yphtoen"> <option value="dark" class="astro-4yphtoen">Dark</option><option value="light" class="astro-4yphtoen">Light</option><option value="auto" selected class="astro-4yphtoen">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </label>  </starlight-theme-select>  <script>
+	StarlightThemeProvider.updatePickers();
+</script>   </div>  </div> </div> </div> </nav> <div class="main-frame astro-vrdttmbt">  <script type="module">const a=document.getElementById("starlight__sidebar"),n=a?.querySelector("sl-sidebar-state-persist"),o="sl-sidebar-state",i=()=>{let t=[];const e=n?.dataset.hash||"";try{const s=sessionStorage.getItem(o),r=JSON.parse(s||"{}");Array.isArray(r.open)&&r.hash===e&&(t=r.open)}catch{}return{hash:e,open:t,scroll:a?.scrollTop||0}},c=t=>{try{sessionStorage.setItem(o,JSON.stringify(t))}catch{}},d=()=>c(i()),l=(t,e)=>{const s=i();s.open[e]=t,c(s)};n?.addEventListener("click",t=>{if(!(t.target instanceof Element))return;const e=t.target.closest("summary")?.closest("details");if(!e)return;const s=e.querySelector("sl-sidebar-restore"),r=parseInt(s?.dataset.index||"");isNaN(r)||l(!e.open,r)});addEventListener("visibilitychange",()=>{document.visibilityState==="hidden"&&d()});addEventListener("pageHide",d);</script> <div class="lg:sl-flex astro-67yu43on"> <aside class="right-sidebar-container print:hidden astro-67yu43on"> <div class="right-sidebar astro-67yu43on"> <div class="lg:sl-hidden astro-pb3aqygn"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-doynk5tl"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-doynk5tl"><details id="starlight__mobile-toc" class="astro-doynk5tl"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-doynk5tl"><div class="toggle sl-flex astro-doynk5tl">On this page<svg aria-hidden="true" class="caret astro-doynk5tl astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </div><span class="display-current astro-doynk5tl"></span></summary><div class="dropdown astro-doynk5tl"><ul class="isMobile astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#html" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">HTML</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#css" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">CSS</span> </a> <ul class="isMobile astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#css-动画" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">CSS 动画</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#预编译" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">预编译</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#对比分析" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">对比分析</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#js" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">JS</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#性能优化" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">性能优化</span> </a> <ul class="isMobile astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#综合优化" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">综合优化</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#webpack" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Webpack</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#chrome" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Chrome</span> </a> <ul class="isMobile astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#chrome-extensions-开发" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">chrome extensions 开发</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#调试" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">调试</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#工程化" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">工程化</span> </a> <ul class="isMobile astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#npm" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">npm</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#git" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Git</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#其他" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">其他</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#编辑器" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">编辑器</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#项目管理" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">项目管理</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#node" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Node</span> </a> <ul class="isMobile astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#教程" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">教程</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#其他-1" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">其他</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#用户体验" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">用户体验</span> </a> <ul class="isMobile astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#seo" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">SEO</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#产品经理的特殊需求" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">产品经理的特殊需求</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;"></span> </a>  </li> </ul> </div></details></nav></mobile-starlight-toc><script type="module" src="/web-handbook/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.CwvHEPnB.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-pb3aqygn"><div class="sl-container astro-pb3aqygn"><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#html" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">HTML</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#css" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">CSS</span> </a> <ul class="astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#css-动画" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">CSS 动画</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#预编译" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">预编译</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#对比分析" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">对比分析</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#js" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">JS</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#性能优化" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">性能优化</span> </a> <ul class="astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#综合优化" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">综合优化</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#webpack" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Webpack</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#chrome" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Chrome</span> </a> <ul class="astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#chrome-extensions-开发" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">chrome extensions 开发</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#调试" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">调试</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#工程化" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">工程化</span> </a> <ul class="astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#npm" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">npm</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#git" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Git</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#其他" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">其他</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#编辑器" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">编辑器</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#项目管理" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">项目管理</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#node" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Node</span> </a> <ul class="astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#教程" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">教程</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#其他-1" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">其他</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#用户体验" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">用户体验</span> </a> <ul class="astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#seo" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">SEO</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 1;"> <a href="#产品经理的特殊需求" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">产品经理的特殊需求</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;"></span> </a>  </li> </ul> </nav></starlight-toc><script type="module" src="/web-handbook/_astro/TableOfContents.astro_astro_type_script_index_0_lang.CxWEh7Yp.js"></script></div></div> </div> </aside> <div class="main-pane astro-67yu43on">  <main data-pagefind-body class="astro-bguv2lll" lang="en" dir="ltr">    <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <h1 id="_top" class="astro-j6tvhyss">Web 指南</h1>  </div> </div>  <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <div class="sl-markdown-content"> <p>本手册收录了一些开发、学习、拓展相关的资源，方便查阅和提升。</p>
+<p>目前持续添加中…</p>
+<h2 id="html">HTML</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML">HTML 初学者教程 - MDN</a></li>
+</ul>
+<!-- css -->
+<h2 id="css">CSS</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS">CSS 教程 - MDN</a></li>
+</ul>
+<h3 id="css-动画">CSS 动画</h3>
+<ul>
+<li><a href="https://h-wakanda.github.io/css-animation-101-cn/#welcome">《CSS Animation 101》</a></li>
+</ul>
+<h3 id="预编译">预编译</h3>
+<ul>
+<li><a href="http://lesscss.org/">less</a></li>
+<li><a href="https://sass-lang.com/">Sass</a></li>
+<li><a href="http://stylus-lang.com/">Stylus</a></li>
+</ul>
+<h3 id="对比分析">对比分析</h3>
+<ul>
+<li><a href="https://efe.baidu.com/blog/revisiting-css-preprocessors/">再谈 CSS 预处理器 | EFE Tech</a></li>
+</ul>
+<h2 id="js">JS</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript">JavaScript 教程 - MDN</a></li>
+<li><a href="https://book.douban.com/subject/35396470/">《JavaScript权威指南（原书第7版）》</a></li>
+<li><a href="http://es6.ruanyifeng.com/">《ECMAScript 6 入门》阮一峰</a></li>
+<li><a href="https://javahashbrown.github.io/Blog/%E8%AF%91-%E5%86%99%E7%BB%99%E6%81%90%E9%BE%99%E7%9A%84%E7%8E%B0%E4%BB%A3Javascript%E6%8C%87%E5%8D%97/">[译]写给恐龙的现代Javascript指南</a></li>
+</ul>
+<!--  -->
+<h2 id="性能优化">性能优化</h2>
+<ul>
+<li><a href="https://web.dev/user-centric-performance-metrics/">以用户为中心的性能指标 - web.dev</a></li>
+<li><a href="https://web.dev/rail/">使用 RAIL 模型衡量性能 - web.dev</a></li>
+<li><a href="https://mp.weixin.qq.com/s/uga8enKl1Yx7yE6d8Bn0bQ">仅使用CSS提高页面渲染速度</a></li>
+</ul>
+<h3 id="综合优化">综合优化</h3>
+<ul>
+<li><a href="https://frontendchecklist.io/">The Front-End Checklist - ✨ Your best Front-End Tool ✨</a></li>
+<li><a href="https://juejin.cn/post/6844903764319535117">[译] 2019 前端性能优化年度总结 - 掘金</a></li>
+</ul>
+<h3 id="webpack">Webpack</h3>
+<ul>
+<li><a href="https://webpack.js.org/">webpack 官网</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/26710831">Webpack 大法之 Code Splitting - 知乎</a></li>
+<li><a href="https://app.gitbook.com/o/-LMCHG3mZ_daYzL_Xj1N/s/n79caNXuIawYGd2LNzgK/c/bfWtKI41u8G06qggySPM/web-guide/qian-duan-xing-neng-you-hua#zong-he-you-hua">Webpack揭秘——走向高阶前端的必经之路 - 腾讯Web前端 IMWeb 团队社区 | blog | 团队博客</a></li>
+<li><a href="https://www.jeffjade.com/2017/08/12/125-webpack-package-optimization-for-speed/">Webpack 打包优化之速度篇 | 晚晴幽草轩</a></li>
+<li><a href="https://www.jeffjade.com/2017/08/06/124-webpack-packge-optimization-for-volume/#">Webpack 打包优化之体积篇 | 晚晴幽草轩</a></li>
+<li><a href="https://blog.fundebug.com/2019/03/04/webpack-bundle-split/">Web 性能优化： 使用 Webpack 分离数据的正确方法 | Fundebug博客</a></li>
+</ul>
+<!-- chrome -->
+<h2 id="chrome">Chrome</h2>
+<blockquote>
+<p>chrome 浏览器功能、开发者工具、插件开发等相关内容。</p>
+</blockquote>
+<h3 id="chrome-extensions-开发">chrome extensions 开发</h3>
+<ul>
+<li><a href="https://www.cnblogs.com/liuxianan/p/chrome-plugin-develop.html">【干货】Chrome插件(扩展)开发全攻略 - 我是小茗同学 - 博客园</a></li>
+<li><a href="https://developer.chrome.com/extensions">chrome官方文档</a></li>
+</ul>
+<h3 id="调试">调试</h3>
+<ul>
+<li><a href="http://www.ruanyifeng.com/blog/2019/06/android-remote-debugging.html">远程调试 Android 设备网页 - 阮一峰的网络日志</a></li>
+</ul>
+<!-- engineering -->
+<h2 id="工程化">工程化</h2>
+<h3 id="npm"><a href="https://www.npmjs.com/">npm</a></h3>
+<blockquote>
+<p>npm is the world’s largest software registry. Open source developers from every continent use npm to share and borrow packages, and many organizations use npm to manage private development as well.</p>
+</blockquote>
+<ul>
+<li><a href="http://javascript.ruanyifeng.com/nodejs/npm.html">npm模块管理器教程 - 阮一峰</a></li>
+<li><a href="https://javascript.ruanyifeng.com/nodejs/packagejson.html">package.json 文件讲解 - 阮一峰</a></li>
+<li><a href="https://juejin.im/post/5d08d3d3f265da1b7e103a4d">你所需要的npm知识储备都在这了 - 掘金</a></li>
+<li><a href="https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool">How to Use npm as a Build Tool</a></li>
+<li><a href="https://github.com/sindresorhus/awesome-npm">awesome npm - Github</a></li>
+<li><a href="https://github.com/RyanZim/awesome-npm-scripts">Awesome npm scripts - Github</a></li>
+<li><a href="https://github.com/parro-it/awesome-micro-npm-packages">Awesome Micro npm Packages - Github</a></li>
+</ul>
+<h3 id="git"><a href="https://git-scm.com/">Git</a></h3>
+<ul>
+<li><a href="https://github.com/RomuloOliveira/commit-messages-guide/blob/master/README_zh-CN.md">Commit messages guide</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html">Commit message 和 Change log 编写指南 - 阮一峰</a></li>
+</ul>
+<h3 id="其他">其他</h3>
+<ul>
+<li><a href="https://yarnpkg.com">yarn</a></li>
+<li><a href="https://eslint.org/">ESLint - Pluggable JavaScript linter</a></li>
+<li><a href="https://babeljs.io/">Babel · The compiler for next generation JavaScript</a></li>
+<li><a href="https://webpack.js.org/">Webpack</a></li>
+<li><a href="https://www.gulpjs.com.cn/">Gulp</a></li>
+<li><a href="https://www.rollupjs.com/guide/zh">rollup</a></li>
+<li><a href="http://browserify.org/">Bowserify</a></li>
+<li><a href="https://www.charlesproxy.com/">Charles</a></li>
+<li><a href="https://www.getpostman.com/">Postman</a></li>
+</ul>
+<h3 id="编辑器">编辑器</h3>
+<ul>
+<li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
+<li><a href="https://code.visualstudio.com/">VS Code</a></li>
+<li><a href="https://atom.io/">Atom</a></li>
+<li><a href="https://www.vim.org/">Vim</a></li>
+<li><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html">微信开发者工具</a></li>
+<li><a href="https://docs.alipay.com/mini/ide/overview">支付宝小程序开发者工具</a></li>
+<li><a href="https://www.quickapp.cn/docCenter/post/95">快应用开发工具</a></li>
+</ul>
+<h3 id="项目管理">项目管理</h3>
+<ul>
+<li><a href="https://tower.im/">Tower</a></li>
+<li><a href="https://trello.com/">Trello</a></li>
+<li><a href="https://www.tapd.cn/">Tapd</a></li>
+</ul>
+<!--  -->
+<h2 id="node"><a href="https://nodejs.org">Node</a></h2>
+<h3 id="教程">教程</h3>
+<ul>
+<li><a href="http://nqdeng.github.io/7-days-nodejs/">七天学会NodeJS</a></li>
+<li><a href="https://yjhjstz.gitbooks.io/deep-into-node/content/">《深入理解Node.js：核心思想与源码分析》</a></li>
+<li><a href="https://github.com/goldbergyoni/nodebestpractices/blob/master/README.chinese.md">Node.js 最佳实践</a></li>
+</ul>
+<h3 id="其他-1">其他</h3>
+<ul>
+<li><a href="http://pm2.keymetrics.io/">pm2</a></li>
+</ul>
+<!--  -->
+<h2 id="用户体验">用户体验</h2>
+<ul>
+<li><a href="https://www.w3.org/WAI/videos/standards-and-benefits/zh-hans">网页无障碍和W3C标准的介绍视频</a></li>
+</ul>
+<h3 id="seo">SEO</h3>
+<p><a href="./seo">SEO 专题</a></p>
+<h3 id="产品经理的特殊需求">产品经理的特殊需求</h3>
+<ol>
+<li>
+<p>Form</p>
+<ul>
+<li><a href="http://acgtofe.com/posts/2021/03/web-emoji-input">在Web中实现表情符号的输入</a></li>
+</ul>
+</li>
+<li>
+<p>Font</p>
+<ul>
+<li><a href="https://sspai.com/post/42889">免费字体获取和使用指南 - 少数派</a></li>
+</ul>
+</li>
+</ol>
+<!-- API -->
+<h2 id=""></h2>
+<ul>
+<li><a href="https://graphql.cn/learn/">GraphQL 学习</a></li>
+</ul> </div> <footer class="sl-flex astro-3yyafb3n"> <div class="meta sl-flex astro-3yyafb3n"> <a href="https://github.com/p2yang/web-handbook/edit/main/docs/src/content/docs/guides/index.md" class="sl-flex print:hidden astro-eez2twj6"><svg aria-hidden="true" class="astro-eez2twj6 astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.2em;"><path d="M22 7.24a1 1 0 0 0-.29-.71l-4.24-4.24a1 1 0 0 0-1.1-.22 1 1 0 0 0-.32.22l-2.83 2.83L2.29 16.05a1 1 0 0 0-.29.71V21a1 1 0 0 0 1 1h4.24a1 1 0 0 0 .76-.29l10.87-10.93L21.71 8c.1-.1.17-.2.22-.33a1 1 0 0 0 0-.24v-.14l.07-.05ZM6.83 20H4v-2.83l9.93-9.93 2.83 2.83L6.83 20ZM18.17 8.66l-2.83-2.83 1.42-1.41 2.82 2.82-1.41 1.42Z"/></svg> Edit page</a> <p>Last updated: <time datetime="2025-01-23T08:28:38.000Z">Jan 23, 2025</time></p> </div> <div class="pagination-links print:hidden astro-u2l5gyhi" dir="ltr">  <a href="/web-handbook/guides/app/" rel="next" class="astro-u2l5gyhi"> <svg aria-hidden="true" class="astro-u2l5gyhi astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"/></svg>  <span class="astro-u2l5gyhi"> Next <br class="astro-u2l5gyhi"> <span class="link-title astro-u2l5gyhi">App</span> </span> </a> </div>   </footer>  </div> </div>   </main> </div> </div>  </div> </div>  </body></html>
