@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	base: '/handbook/',
+	base: '/web-handbook/',
 	integrations: [
 		starlight({
 			title: 'My Docs',
@@ -13,10 +13,10 @@ export default defineConfig({
 			},
 			lastUpdated: true,
 			social: {
-				github: 'https://github.com/p2yang/handbook',
+				github: 'https://github.com/p2yang/web-handbook',
 			},
 			editLink: {
-        baseUrl: 'https://github.com/p2yang/handbook/edit/main/docs/',
+        baseUrl: 'https://github.com/p2yang/web-handbook/edit/main/docs/',
       },
 			sidebar: [
 				{
